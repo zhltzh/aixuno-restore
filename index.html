@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Old Photo Restoration Online Free — AI Photo Restore | Aixuno Restore</title>
+    <meta name="description" content="Restore old photos online for free. Fix fading, yellowing, scratches and blur in your browser, or use AI deep restoration with GFPGAN and Real-ESRGAN. No sign-up, files auto-deleted in 24h." />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="canonical" href="https://restore.aixuno.com/" />
+    <link rel="alternate" hreflang="en" href="https://restore.aixuno.com/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://restore.aixuno.com/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://restore.aixuno.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aixuno Restore" />
+    <meta property="og:title" content="Old Photo Restoration Online Free | Aixuno Restore" />
+    <meta property="og:description" content="Fix fading, scratches and blur in seconds. Local browser fixes plus AI deep restoration. Free, no sign-up." />
+    <meta property="og:url" content="https://restore.aixuno.com/" />
+    <meta property="og:image" content="https://restore.aixuno.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234f46e5'/%3E%3Cpath fill='%23fff' d='M12 4.5A5.5 5.5 0 0 0 6.5 10c0 1.2.4 2.3 1 3.2l-2 3.3h3.1l1.5 2.5 2.6-4.4A5.5 5.5 0 1 0 12 4.5Zm0 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/site.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Aixuno Restore",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "url": "https://restore.aixuno.com/",
+      "description": "Free online old photo restoration with local browser fixes and AI deep restoration.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to restore an old photo online",
+      "step": [
+        { "@type": "HowToStep", "name": "Upload your photo", "text": "Drag in a scanned print or a phone photo of an old picture." },
+        { "@type": "HowToStep", "name": "Tune or go AI", "text": "Adjust fade correction, sharpening and scratch smoothing, or click AI Enhance." },
+        { "@type": "HowToStep", "name": "Compare and download", "text": "Drag the before/after slider to inspect the result, then download." }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="network" class="network"></div>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="brand" href="./index.html"><span class="brand__mark">A</span>Aixuno <span class="brand__site" data-i18n="brand_site">Restore</span></a>
+        <nav class="mini-nav">
+          <a href="#workspace" data-i18n="nav_tool">Restore tool</a>
+          <a href="./guides/index.html" data-i18n="nav_guides">Guides</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        </nav>
+        <div class="lang-switch" id="lang-switch" role="group" data-i18n-aria="lang_label" aria-label="Language"></div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Free · No sign-up · Local & AI options</p>
+        <h1 data-i18n="hero_title">Restore Old Photos Online, Free</h1>
+        <p class="lead" data-i18n="hero_lead"></p>
+        <div class="hero-cta">
+          <a class="button button--primary" href="#workspace" data-i18n="hero_cta_primary">Restore a photo now</a>
+          <a class="button button--secondary" href="./guides/index.html" data-i18n="hero_cta_secondary">Read the guides</a>
+        </div>
+        <ul class="hero-badges">
+          <li data-i18n="hero_badge_1">Free to use</li>
+          <li data-i18n="hero_badge_2">No account needed</li>
+          <li data-i18n="hero_badge_3">Files auto-deleted in 24h</li>
+        </ul>
+      </section>
+
+      <section class="workspace section--tight" id="workspace">
+        <div class="container">
+          <p class="eyebrow" data-i18n="ws_eyebrow">Online photo restoration</p>
+          <h2 data-i18n="ws_title">Upload your old photo</h2>
+          <p class="section-sub" data-i18n="ws_sub"></p>
+
+          <div id="restore-empty">
+            <div id="dropzone" class="dropzone" tabindex="0" role="button" data-i18n-aria="r_dz_main_strong" aria-label="Upload an old photo">
+              <input id="file-input" type="file" accept="image/*" hidden />
+              <div class="dz-inner">
+                <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
+                  <path fill="currentColor" d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 14H5l3.5-4.5 2.5 3 3.5-4.5L19 18ZM8.5 6A1.75 1.75 0 1 1 8.5 9.5 1.75 1.75 0 0 1 8.5 6Z" />
+                </svg>
+                <p class="dz-main"><strong data-i18n="r_dz_main_strong">Drop an old photo here</strong> <span data-i18n="r_dz_main_rest">or click to browse</span></p>
+                <p class="dz-hint" data-i18n="r_dz_hint">JPG · PNG · WebP · up to 20MB</p>
+              </div>
+            </div>
+            <p class="footnote"><span class="tag tag-local" data-i18n="r_local_badge">Local processing · nothing is uploaded</span></p>
+          </div>
+
+          <div id="restore-editor" hidden>
+            <div id="compare" class="compare">
+              <img id="cmp-before" alt="Before" />
+              <div id="cmp-after-clip" class="compare-after"><img id="cmp-after" alt="After" /></div>
+              <div id="cmp-handle" class="compare-handle"></div>
+              <span class="compare-label compare-label-before" data-i18n="r_compare_before">Before</span>
+              <span class="compare-label compare-label-after" data-i18n="r_compare_after">After</span>
+            </div>
+            <p class="footnote" style="text-align:center" data-i18n="r_compare_hint">Drag to compare before / after</p>
+
+            <div class="panel" style="margin-top:18px">
+              <h3 data-i18n="r_controls_h2">Enhancement</h3>
+              <div class="slider-row">
+                <label for="ctl-defade" data-i18n="r_ctl_defade">Fade correction</label>
+                <input type="range" id="ctl-defade" min="0" max="100" value="100" />
+                <output id="out-defade">Auto</output>
+              </div>
+              <div class="slider-row">
+                <label for="ctl-sharpen" data-i18n="r_ctl_sharpen">Sharpen</label>
+                <input type="range" id="ctl-sharpen" min="0" max="100" value="45" />
+                <output id="out-sharpen">45</output>
+              </div>
+              <div class="slider-row">
+                <label for="ctl-denoise" data-i18n="r_ctl_denoise">Scratch & noise removal</label>
+                <input type="range" id="ctl-denoise" min="0" max="100" value="0" />
+                <output id="out-denoise">Off</output>
+              </div>
+            </div>
+
+            <div class="actions-row">
+              <button id="btn-download" class="button button--primary" data-i18n="r_btn_download">Download restored photo</button>
+              <button id="btn-reset" class="button button--secondary" data-i18n="r_btn_reset">Choose another photo</button>
+            </div>
+            <p id="proc-status" class="footnote"></p>
+
+            <div class="ai-card">
+              <h3 data-i18n="r_ai_h2">AI Deep Restore <span class="tag tag-cloud">AI</span></h3>
+              <p data-i18n="r_ai_desc"></p>
+              <button id="btn-ai" class="button button--primary" data-i18n="r_ai_btn">AI Enhance</button>
+              <p class="ai-note" data-i18n="r_ai_note">Cloud processing · your photo is auto-deleted after 24h</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="examples">
+        <div class="container">
+          <p class="eyebrow" data-i18n="ex_eyebrow">Before / after</p>
+          <h2 data-i18n="ex_title">See what restoration looks like</h2>
+          <p class="section-sub" data-i18n="ex_sub"></p>
+          <div class="examples-grid">
+            <article class="example-card">
+              <div class="example-card__images">
+                <figure><img src="/examples/example-1-before.jpg" alt="Faded yellowed photo before restoration" loading="lazy" /><figcaption data-i18n="ex_before">Before</figcaption></figure>
+                <figure><img src="/examples/example-1-after.jpg" alt="Photo after fade correction" loading="lazy" /><figcaption data-i18n="ex_after">After</figcaption></figure>
+              </div>
+              <div class="example-card__body">
+                <h3 data-i18n="ex1_title">Yellowed, faded print</h3>
+                <p data-i18n="ex1_desc"></p>
+              </div>
+            </article>
+            <article class="example-card">
+              <div class="example-card__images">
+                <figure><img src="/examples/example-2-before.jpg" alt="Noisy low contrast scan before restoration" loading="lazy" /><figcaption data-i18n="ex_before">Before</figcaption></figure>
+                <figure><img src="/examples/example-2-after.jpg" alt="Scan after denoising and sharpening" loading="lazy" /><figcaption data-i18n="ex_after">After</figcaption></figure>
+              </div>
+              <div class="example-card__body">
+                <h3 data-i18n="ex2_title">Noisy, low-contrast scan</h3>
+                <p data-i18n="ex2_desc"></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow section" id="how">
+        <div class="container">
+          <p class="eyebrow" data-i18n="steps_eyebrow">How it works</p>
+          <h2 data-i18n="steps_title">From old print to restored photo in three steps</h2>
+          <p class="section-sub" data-i18n="steps_sub"></p>
+          <div class="steps">
+            <div class="step"><span class="step-num">01</span><h3 data-i18n="step1_title">Upload your photo</h3><p data-i18n="step1_desc"></p></div>
+            <div class="step"><span class="step-num">02</span><h3 data-i18n="step2_title">Tune or go AI</h3><p data-i18n="step2_desc"></p></div>
+            <div class="step"><span class="step-num">03</span><h3 data-i18n="step3_title">Compare & download</h3><p data-i18n="step3_desc"></p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <p class="eyebrow" data-i18n="feat_eyebrow">Why Aixuno Restore</p>
+          <h2 data-i18n="feat_title">A restoration studio that respects your privacy</h2>
+          <div class="cards-grid">
+            <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg></div><h3 data-i18n="feat1_title">Local-first processing</h3><p data-i18n="feat1_desc"></p></div>
+            <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm1 4v4l3 2-1 1.6-4-2.6V8h2Z"/></svg></div><h3 data-i18n="feat2_title">Real AI models</h3><p data-i18n="feat2_desc"></p></div>
+            <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v12H4zM8 6v12"/></svg></div><h3 data-i18n="feat3_title">Before/after compare</h3><p data-i18n="feat3_desc"></p></div>
+            <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></div><h3 data-i18n="feat4_title">No account, no watermark</h3><p data-i18n="feat4_desc"></p></div>
+            <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5Z"/></svg></div><h3 data-i18n="feat5_title">Private by default</h3><p data-i18n="feat5_desc"></p></div>
+            <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v20H7zM10 4v2h4V4"/></svg></div><h3 data-i18n="feat6_title">Works on your phone</h3><p data-i18n="feat6_desc"></p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="use-cases" style="background:var(--color-surface)">
+        <div class="container">
+          <p class="eyebrow" data-i18n="use_eyebrow">Use cases</p>
+          <h2 data-i18n="use_title">Made for the photos that matter</h2>
+          <div class="cards-grid">
+            <div class="usecase"><h3 data-i18n="use1_title">Family albums</h3><p data-i18n="use1_desc"></p></div>
+            <div class="usecase"><h3 data-i18n="use2_title">ID & document photos</h3><p data-i18n="use2_desc"></p></div>
+            <div class="usecase"><h3 data-i18n="use3_title">Creator archives</h3><p data-i18n="use3_desc"></p></div>
+            <div class="usecase"><h3 data-i18n="use4_title">Print & framing</h3><p data-i18n="use4_desc"></p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="guides">
+        <div class="container">
+          <p class="eyebrow" data-i18n="guides_eyebrow">Learn</p>
+          <h2 data-i18n="guides_title">Photo restoration guides</h2>
+          <p class="section-sub" data-i18n="guides_sub"></p>
+          <div class="cards-grid">
+            <a class="guide-card" href="./guides/restore-faded-family-photos.html"><h3 data-i18n="guide1_title">Restore faded family photos</h3><p data-i18n="guide1_desc"></p><span class="text-link">→</span></a>
+            <a class="guide-card" href="./guides/scratch-and-dust-repair.html"><h3 data-i18n="guide2_title">Fix scratches and dust</h3><p data-i18n="guide2_desc"></p><span class="text-link">→</span></a>
+            <a class="guide-card" href="./guides/ai-restore-vs-local-fix.html"><h3 data-i18n="guide3_title">AI restore vs local fix</h3><p data-i18n="guide3_desc"></p><span class="text-link">→</span></a>
+          </div>
+          <p style="margin-top:18px"><a class="text-link" href="./guides/index.html" data-i18n="guides_all">Browse all restoration guides</a></p>
+        </div>
+      </section>
+
+      <section class="section" id="faq" style="background:var(--color-surface)">
+        <div class="container">
+          <p class="eyebrow" data-i18n="faq_eyebrow">FAQ</p>
+          <h2 data-i18n="faq_title">Frequently asked questions</h2>
+          <div class="faq-list">
+            <details class="faq-item" open><summary data-i18n="faq1_q">Is Aixuno Restore really free?</summary><p data-i18n="faq1_a"></p></details>
+            <details class="faq-item"><summary data-i18n="faq2_q">Are my photos uploaded to a server?</summary><p data-i18n="faq2_a"></p></details>
+            <details class="faq-item"><summary data-i18n="faq3_q">Which formats and sizes are supported?</summary><p data-i18n="faq3_a"></p></details>
+            <details class="faq-item"><summary data-i18n="faq4_q">How long does AI Enhance take?</summary><p data-i18n="faq4_a"></p></details>
+            <details class="faq-item"><summary data-i18n="faq5_q">Can it fix torn or heavily damaged photos?</summary><p data-i18n="faq5_a"></p></details>
+            <details class="faq-item"><summary data-i18n="faq6_q">Do you keep my photos?</summary><p data-i18n="faq6_a"></p></details>
+            <details class="faq-item"><summary data-i18n="faq7_q">Does it work on mobile?</summary><p data-i18n="faq7_a"></p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ecosystem">
+        <div class="container">
+          <p class="eyebrow" data-i18n="eco_eyebrow">Aixuno ecosystem</p>
+          <h2 data-i18n="eco_title">More free tools from Aixuno</h2>
+          <div class="ecosystem__grid">
+            <a class="ecosystem-card" href="https://aixuno.com/"><span class="ecosystem-card__mark">MD</span><strong>Markdown 转换</strong><span>AI answers into Word, PDF and clean Markdown.</span><em>↗</em></a>
+            <a class="ecosystem-card" href="https://image.aixuno.com/"><span class="ecosystem-card__mark">IMG</span><strong>Pixkit 图片</strong><span>Convert, resize and optimize images in your browser.</span><em>↗</em></a>
+            <a class="ecosystem-card" href="https://compress.aixuno.com/"><span class="ecosystem-card__mark">ZIP</span><strong>文件压缩</strong><span>Shrink images and documents for faster sharing.</span><em>↗</em></a>
+            <a class="ecosystem-card" href="https://pdf.aixuno.com/"><span class="ecosystem-card__mark">PDF</span><strong>PDF 工具</strong><span>Focused, browser-based PDF utilities.</span><em>↗</em></a>
+            <a class="ecosystem-card" href="https://bg.aixuno.com/"><span class="ecosystem-card__mark">BG</span><strong>AI 抠图</strong><span>Remove image backgrounds with AI.</span><em>↗</em></a>
+            <a class="ecosystem-card" href="https://scan.aixuno.com/"><span class="ecosystem-card__mark">DOC</span><strong>文档扫描</strong><span>Phone photos into crisp scanned PDFs with local OCR.</span><em>↗</em></a>
+            <a class="ecosystem-card" href="https://restore.aixuno.com/"><span class="ecosystem-card__mark">FIX</span><strong>老照片修复</strong><span>You are here — restore old photos free.</span><em>↗</em></a>
+            <a class="ecosystem-card" href="https://watermark.aixuno.com/"><span class="ecosystem-card__mark">WM</span><strong>视频去水印</strong><span>Remove watermarks from videos you own.</span><em>↗</em></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span>© 2026 Aixuno · <span data-i18n="footer_rights">Your photos, processed with care.</span></span>
+        <span class="footer-links">
+          <a href="./about.html" data-i18n="footer_about">About</a>
+          <a href="./contact.html" data-i18n="footer_contact">Contact</a>
+          <a href="./privacy.html" data-i18n="footer_privacy">Privacy</a>
+          <a href="./terms.html" data-i18n="footer_terms">Terms</a>
+          <a href="./disclaimer.html" data-i18n="footer_disclaimer">Disclaimer</a>
+          <a href="./changelog.html" data-i18n="footer_changelog">Changelog</a>
+        </span>
+        <span class="footer-links">
+          <a href="https://aixuno.com/">Markdown</a>
+          <a href="https://image.aixuno.com/">Pixkit 图片</a>
+          <a href="https://compress.aixuno.com/">文件压缩</a>
+          <a href="https://pdf.aixuno.com/">PDF 工具</a>
+          <a href="https://bg.aixuno.com/">AI 抠图</a>
+          <a href="https://scan.aixuno.com/">文档扫描</a>
+          <a href="https://watermark.aixuno.com/">视频去水印</a>
+        </span>
+      </div>
+    </footer>
+
+    <div id="busy" class="busy" hidden><div class="spinner" role="progressbar" aria-label="Processing"></div><p id="busy-text">Processing…</p></div>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <script type="module" src="/src/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://restore.aixuno.com/sitemap.xml

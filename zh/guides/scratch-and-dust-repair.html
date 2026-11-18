@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>修复老照片的划痕、灰尘与颗粒 | Aixuno Restore</title>
+    <meta name="description" content="什么时候中值平滑足够，什么时候值得等待 AI 修复。" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="canonical" href="https://restore.aixuno.com/zh/guides/scratch-and-dust-repair.html" />
+    <link rel="alternate" hreflang="en" href="https://restore.aixuno.com/guides/scratch-and-dust-repair.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://restore.aixuno.com/zh/guides/scratch-and-dust-repair.html" />
+    <link rel="alternate" hreflang="x-default" href="https://restore.aixuno.com/guides/scratch-and-dust-repair.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Aixuno Restore" />
+    <meta property="og:title" content="修复老照片的划痕、灰尘与颗粒" />
+    <meta property="og:description" content="什么时候中值平滑足够，什么时候值得等待 AI 修复。" />
+    <meta property="og:url" content="https://restore.aixuno.com/zh/guides/scratch-and-dust-repair.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234f46e5'/%3E%3Cpath fill='%23fff' d='M12 4.5A5.5 5.5 0 0 0 6.5 10c0 1.2.4 2.3 1 3.2l-2 3.3h3.1l1.5 2.5 2.6-4.4A5.5 5.5 0 1 0 12 4.5Zm0 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/site.css" />
+  </head>
+  <body>
+    <div id="network" class="network"></div>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="brand" href="../index.html"><span class="brand__mark">A</span>Aixuno <span class="brand__site">老照片修复</span></a>
+        <nav class="mini-nav">
+          <a href="../index.html#workspace">修复工具</a>
+          <a href="./index.html">修复教程</a>
+        </nav>
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language"></div>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="section">
+        <div class="container prose">
+          <h1>修复老照片的划痕、灰尘与颗粒</h1>
+          <p>划痕和灰尘通常表现为细亮线或暗线，颗粒则像均匀的斑点。它们的处理方式略有不同。</p><h2>本地工具如何帮忙</h2><p>划痕与噪点滑块使用 3×3 中值滤波：每个像素被邻域的中值替换，可以去除孤立斑点，同时比模糊更好地保留真实边缘。强度会与原图混合，保留更多细节。</p><h2>少量使用</h2><p>从较低数值开始，拖动前后对比滑块检查。中值滤波过度会让皮肤有塑料感，并抹掉头发、织物纹理等细节。</p><h2>什么时候改用 AI</h2><p>穿过人脸的深划痕、大面积污渍或裂纹需要内容感知重建。AI 增强中的 GFPGAN 能重建简单滤镜无法恢复的面部特征。</p><h2>下次扫描前的预防</h2><p>扫描前用干净、干燥、柔软的布擦拭照片，并清洁扫描仪玻璃。物理除尘永远比数字除尘更好。</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span>© 2026 Aixuno</span>
+        <span class="footer-links">
+          <a href="../about.html">关于</a>
+          <a href="../contact.html">联系我们</a>
+          <a href="../privacy.html">隐私</a>
+          <a href="../terms.html">条款</a>
+          <a href="../disclaimer.html">免责声明</a>
+          <a href="../changelog.html">更新日志</a>
+        </span>
+      </div>
+    </footer>
+    <script type="module">
+      import { initPage } from '/src/main.js';
+      initPage('restore');
+    </script>
+  </body>
+</html>

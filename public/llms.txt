@@ -1,0 +1,18 @@
+# Aixuno Restore
+
+Free online old photo restoration. Local browser fixes (fade correction, sharpening, scratch smoothing) plus AI Enhance with GFPGAN and Real-ESRGAN. No sign-up. Cloud uploads and results auto-deleted within 24 hours.
+
+## Pages
+- Home: https://restore.aixuno.com/
+- Chinese home: https://restore.aixuno.com/zh/
+- Guides: https://restore.aixuno.com/guides/
+- Privacy: https://restore.aixuno.com/privacy.html
+
+## Aixuno tool ecosystem
+- Markdown conversion: https://aixuno.com/
+- Image tools: https://image.aixuno.com/
+- File compression: https://compress.aixuno.com/
+- PDF tools: https://pdf.aixuno.com/
+- AI background removal: https://bg.aixuno.com/
+- Document scanner: https://scan.aixuno.com/
+- Video watermark removal: https://watermark.aixuno.com/

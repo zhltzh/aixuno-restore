@@ -1,0 +1,15 @@
+{
+  "name": "aixuno-restore",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Aixuno Restore - free online old photo restoration (local + AI)",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build-pages.mjs && vite",
+    "build": "node scripts/build-pages.mjs && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
