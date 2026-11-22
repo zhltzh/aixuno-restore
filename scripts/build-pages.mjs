@@ -177,7 +177,16 @@ function layout({ lang, title, desc, path, body, isGuide }) {
     <meta property="og:url" content="${canonical}" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234f46e5'/%3E%3Cpath fill='%23fff' d='M12 4.5A5.5 5.5 0 0 0 6.5 10c0 1.2.4 2.3 1 3.2l-2 3.3h3.1l1.5 2.5 2.6-4.4A5.5 5.5 0 1 0 12 4.5Zm0 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="${cssHref}" />
-  </head>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ef887868142b18a0c32bd9e20da7d91f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
   <body>
     <div id="network" class="network"></div>
     <header class="site-header">
@@ -283,9 +292,34 @@ writeFileSync(
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`
 );
 
+// 国内搜索引擎与通用搜索蜘蛛：显式允许抓取，仅屏蔽 API 与跟踪参数。
+const SEO_BOTS = [
+  'Baiduspider',
+  'Baiduspider-mobile',
+  'Baiduspider-image',
+  'Baiduspider-video',
+  'Baiduspider-news',
+  '360Spider',
+  'HaosouSpider',
+  'Sogou web spider',
+  'Sogou inst spider',
+  'Sogou Pic Spider',
+  'YisouSpider',
+  'Bytespider',
+  'Bingbot',
+  'msnbot',
+  'Googlebot',
+  'Googlebot-Image',
+];
+
+const robotGroup = (ua) =>
+  `User-agent: ${ua}\nAllow: /\nDisallow: /api/\nDisallow: /*?*utm_\nDisallow: /*?*from=\n`;
+
 writeFileSync(
   join(root, 'public', 'robots.txt'),
-  `User-agent: *\nAllow: /\nSitemap: https://restore.aixuno.com/sitemap.xml\n`
+  [robotGroup('*'), '# 国内搜索引擎\n', ...SEO_BOTS.map(robotGroup), 'Sitemap: https://restore.aixuno.com/sitemap.xml\n'].join(
+    '\n'
+  )
 );
 
 writeFileSync(
