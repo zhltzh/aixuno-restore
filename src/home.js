@@ -181,7 +181,12 @@ if (els.dropzone) {
       const fileKey = await uploadFile(originalFile, 'image');
       const { id } = await createJob({ type: 'restore', fileKey, params: { scale: 2 } });
       setBusy(true, t('r_processing'));
-      const job = await pollJob(id, () => {});
+      const job = await pollJob(id, (j) => {
+        if (j.status === 'processing') {
+          const p = Math.max(0, Math.min(100, j.progress ?? 0));
+          setBusy(true, `${t('r_processing')} ${p}%`);
+        }
+      });
       if (job.status === 'done' && job.resultUrl) {
         const res = await fetch(job.resultUrl);
         const blob = await res.blob();
